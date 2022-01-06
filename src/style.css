@@ -1,13 +1,40 @@
+@font-face {
+    font-family: "DM Sans Regular";
+    src : url('/src/assets/font/DM_Sans/DMSans-Regular.ttf')
+}
+@font-face {
+    font-family: "Helevetica Regular";
+    src : url('/src/assets/font/Helvetica-Font/Helvetica.ttf')
+}
+
+
+h1{
+    font-family: "DM Sans Regular";
+    font-weight: 1000;
+    font-size: 50px ;
+}
+
+h2{
+    font-family: "Helevetica Regular";
+    font-weight: 700;
+    font-size: 25px ;
+}
+
+p{
+    font-family: "DM Sans Regular";
+    font-weight: 200;
+    font-size: 14px;
+}
+
 *
 {
+    
     padding: 0;
-    margin: 0;
-   
+    margin: 0;  
 }
 
 html,body
 {
-    
     overflow: hidden;
 }
 
@@ -17,4 +44,41 @@ html,body
     top :  0;
     left : 0;
     outline: none;
+    z-index: -1;
+}
+
+.container{
+    background-color: beige;
+}
+
+.cardAgency{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 680px;
+    margin: 0;
+    border-radius: 11px;
+    background-color: #ffffff;
+}
+
+.cardText {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    padding: 40px;
+}
+
+.cardText h1, h2 {
+    width: 100%;
+}
+
+.cardImg {
+    width: 50%;
+
+}
+
+.cardImg img {
+    height: 100%;
 }
