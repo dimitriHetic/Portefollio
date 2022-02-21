@@ -7,25 +7,40 @@
     src : url('/src/assets/font/Helvetica-Font/Helvetica.ttf')
 }
 
+@font-face {
+    font-family: "ivypresto-display",serif; 
+    src : url("https://use.typekit.net/xri8tld.css");
+}
 
-h1{
+
+.funk{
     font-family: "DM Sans Regular";
-    font-weight: 1000;
-    font-size: 50px ;
+    font-weight: 700;
+    font-size: 35px ;
+    color: #FFFFFF;
 }
 
 h2{
     font-family: "Helevetica Regular";
     font-weight: 700;
-    font-size: 25px ;
+    font-size: 12px ;
+    color: #FFFFFF;
 }
 
 p{
     font-family: "DM Sans Regular";
-    font-weight: 200;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 8px;
+    color: #FFFFFF;
 }
 
+a{
+    font-family: "DM Sans Regular";
+    font-weight: 500;
+    font-size: 25px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
 *
 {
     
@@ -35,6 +50,7 @@ p{
 
 html,body
 {
+    background-color: #08021D;
     overflow: hidden;
 }
 
@@ -44,21 +60,48 @@ html,body
     top :  0;
     left : 0;
     outline: none;
-    z-index: -1;
+    z-index: 1;
 }
 
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    padding-top: 35px;
+    
+}
+
+.homeTitle,h1{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    font-family: "ivypresto-display",serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 2;
+}
 .container{
-    background-color: beige;
+    
 }
 
 .cardAgency{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    width: 680px;
+    width: 500px;
+    height: 400px;
     margin: 0;
     border-radius: 11px;
-    background-color: #ffffff;
+    background: linear-gradient(157.39deg, rgba(255, 255, 255, 0.81) 5.93%, rgba(255, 255, 255, 0.324) 86.86%);
+    border: 0.923126px solid rgba(28, 241, 152, 0.29);
+    box-sizing: border-box;
+    box-shadow: 0px 3.69251px 22.155px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.69251px);
 }
 
 .cardText {
@@ -74,8 +117,8 @@ html,body
     width: 100%;
 }
 
-.cardImg {
-    width: 50%;
+.cardImg img {
+    width: 100%;
 
 }
 
